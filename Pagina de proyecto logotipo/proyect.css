@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: aliceblue;
+    color: black;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative; /* necesario para posicionar el logo */
+}
+
+/* Logo en esquina izquierda */
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Título */
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+/* Subtítulo */
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* BOTÓN */
+#btnInfo:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* MAIN */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* SECCIONES */
+section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+    display: inline-block;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 0.9rem;
+}
+section:last-of-type {
+    text-align: center;
+}
+section.contacto {
+    background-color:black;
+}
