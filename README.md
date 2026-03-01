@@ -1,2 +1,2 @@
-# ck-tecnol-gia-
+#uno
 pagina web informativa de negocios 
