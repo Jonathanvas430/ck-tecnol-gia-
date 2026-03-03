@@ -16,28 +16,22 @@ header {
     position: relative; /* necesario para posicionar el logo y menú */
 }
 
-/*aqui esta lo del log para la pc */
+/* LOGO */
 .logo {
-    width: 150px;
-    position: absolute;
-    top: 20px;
+    width: 100px;       /* tamaño fijo */
+    height: auto;       /* mantiene proporción */
+    position: absolute; 
+    top: 20px; 
     left: 20px;
 }
-/*aqui tenemos el logo para el movil y el menu */ 
 
-/* MENU */
+/* Si quieres ajustar tamaño en móviles */
 @media (max-width: 768px) {
-    
     .logo {
-    width: 100px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+        width: 80px; /* más pequeño en pantallas chicas */
+        height: auto;
+    }
 }
-
-
-}
-
 
 #menuContainer {
     position: absolute;
@@ -156,3 +150,4 @@ section.contacto {
     background-color: black;
     color: white;
 }
+
