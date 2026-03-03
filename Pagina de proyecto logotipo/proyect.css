@@ -35,8 +35,8 @@ header {
         z-index: 2000;
     }
     .logo {
-        top: 10px
-        left: 15px
+        top: 10px;
+        left: 15px;
         width: 80px; /* más pequeño en pantallas chicas */
         
     }
@@ -160,5 +160,6 @@ section.contacto {
     background-color: black;
     color: white;
 }
+
 
 
