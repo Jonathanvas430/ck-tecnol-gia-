@@ -1,3 +1,4 @@
+/*Este es el cuerpo del css*/
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,19 +9,88 @@ body {
 
 /* HEADER */
 header {
-    background-color: #1e293b;
+    background-color: black;
     color: white;
     padding: 60px 20px;
     text-align: center;
-    position: relative;
+    position: relative; /* necesario para posicionar el logo y menú */
 }
 
-/* Logo en esquina izquierda (ESCRITORIO) */
+/*aqui esta lo del log para la pc */
 .logo {
     width: 150px;
     position: absolute;
     top: 20px;
     left: 20px;
+}
+/*aqui tenemos el logo para el movil y el menu */ 
+
+/* MENU */
+@media (max-width: 768px) {
+    
+    .logo {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+}
+
+
+#menuContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+#btnMenu {
+    background-color: blue;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+#btnMenu:hover {
+    background-color: red;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+#menu {
+    display: none; /* oculto por defecto */
+    position: absolute;
+    top: 100%; /* justo debajo del botón */
+    right: 0;
+    background-color: black;
+    color: yellow;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#menu.mostrar {
+    display: block;
+}
+
+#menu a {
+    display: block;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: red;
+    color: white;
 }
 
 /* Título */
@@ -35,14 +105,7 @@ header p {
     opacity: 0.9;
 }
 
-/* BOTÓN */
-#btnInfo {
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-}
-
+/* BOTÓN HORARIO */
 #btnInfo:hover {
     background-color: darkblue;
     transform: scale(1.05);
@@ -85,44 +148,11 @@ footer {
     font-size: 0.9rem;
 }
 
-/* CONTACTO */
-section.contacto {
-    background-color: black;
+section:last-of-type {
+    text-align: center;
 }
 
-/* 📱 RESPONSIVE PARA TELÉFONO */
-@media (max-width: 768px) {
-
-    header {
-        padding: 40px 20px;
-    }
-
-    .logo {
-        position: static;   /* deja de estar flotando */
-        width: 100px;
-        margin-bottom: 15px;
-    }
-
-    header h1 {
-        font-size: 1.6rem;
-    }
-
-    header p {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
-
-    main {
-        margin: 20px auto;
-        padding: 10px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    #btnInfo {
-        width: 100%;
-        max-width: 250px;
-    }
+section.contacto {
+    background-color: black;
+    color: white;
 }
