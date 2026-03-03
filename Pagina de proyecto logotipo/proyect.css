@@ -27,10 +27,20 @@ header {
 
 /* Si quieres ajustar tamaño en móviles */
 @media (max-width: 768px) {
-    .logo {
-        width: 80px; /* más pequeño en pantallas chicas */
-        height: auto;
+
+    #menuContainer {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 2000;
     }
+    .logo {
+        top: 10px
+        left: 15px
+        width: 80px; /* más pequeño en pantallas chicas */
+        
+    }
+
 }
 
 #menuContainer {
@@ -150,4 +160,5 @@ section.contacto {
     background-color: black;
     color: white;
 }
+
 
